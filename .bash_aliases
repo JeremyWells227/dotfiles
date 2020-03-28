@@ -1,0 +1,10 @@
+alias a='alias'
+a lr='ls --color=auto -altrH'
+a l='ls --color=auto -altH'
+a s='source ~/.bashrc'
+a u='cd ..'
+a u2='cd ../../'
+a u3='cd ../../../'
+a u4='cd ../../../../'
+a u5='cd ../../../../../'
+
