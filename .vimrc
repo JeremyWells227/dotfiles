@@ -72,6 +72,10 @@ nnoremap <c-h> <C-w>h
 nnoremap <c-j> <C-w>j
 nnoremap <c-k> <C-w>k
 nnoremap <c-l> <C-w>l
+"nnoremap <c-S-h> 5<C-w><
+"nnoremap <c-S-J> 5<C-w>+
+"nnoremap <c-S-K> 5<C-w>-
+"nnoremap <c-S-L> 5<C-w>>
 let g:coc_global_extensions = ['coc-solargraph']
 set updatetime=50
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
