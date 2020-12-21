@@ -17,3 +17,5 @@ a hk="nvim ~/.config/sxhkd/sxhkdrc"
 a bspreload="~/.config/bspwm/bspwmrc"
 a polyconfig="nvim ~/.config/polybar/config"
 a lf='lfrun'
+a pbcopy='xsel --clipboard --input'
+a pbpaste='xsel --clipboard --output'

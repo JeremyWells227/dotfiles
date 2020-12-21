@@ -10,7 +10,7 @@
 
 # terminal emulator
 super + Return
-	st
+	st 
 
 # program launcher
 super + d
@@ -130,5 +130,12 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
+XF86AudioMute
+	pulsemixer --toggle-mute
 
+XF86AudioLowerVolume
+	pulsemixer --change-volume -5
+XF86AudioRaiseVolume
+	pulsemixer --change-volume +5
+	
 
