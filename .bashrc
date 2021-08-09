@@ -119,6 +119,6 @@ eval "$(rbenv init -)"
 export EDITOR="nvim"
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 source "$HOME/.vim/bundle/gruvbox/gruvbox_256palette.sh"
-
+xset m 0 0
 eval "$(starship init bash)"
 

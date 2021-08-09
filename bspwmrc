@@ -16,13 +16,15 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config focus_follows_pointer true
 
+bsp-layout set tall main
+
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a polybar layer=below
 bspc rule -a mordhau desktop=games
 bspc rule -a steam desktop=games
-bspc rule -a google-chrome desktop='web'
+bspc rule -a Google-chrome desktop='web'
 bspc rule -a chrome desktop='web'
 
 nitrogen --restore &
@@ -31,4 +33,5 @@ nm-applet &
 
 xinput set-prop "Logitech G502 HERO Gaming Mouse" "libinput Accel Speed" -0.125
 xinput set-prop "Logitech G502 HERO Gaming Mouse" "libinput Accel Profile Enabled" 0, 1
+set xkbmap -option caps:escape
 ~/.config/polybar/bspwm_launch.sh & 
