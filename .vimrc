@@ -2,7 +2,7 @@ set nocompatible
 set encoding=utf-8
 set noshowmode
 filetype off
-let g:python3_host_prog = '/usr/bin/python3.7'
+"let g:python3_host_prog = '/usr/bin/python3.7'
 set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/vim-ruby
 set rtp+=~/.fzf
