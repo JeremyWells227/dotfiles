@@ -98,6 +98,9 @@ super + {_,shift + }{1-6}
 # preselect
 #
 
+super + { v, b }
+	bsp-layout {cycle, remove}
+
 # preselect the direction
 super + ctrl + {h,j,k,l}
 	bspc node -p {west,south,north,east}

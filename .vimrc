@@ -2,7 +2,6 @@ set nocompatible
 set encoding=utf-8
 set noshowmode
 filetype off
-"let g:python3_host_prog = '/usr/bin/python3.7'
 set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=~/.vim/bundle/vim-ruby
 set rtp+=~/.fzf
@@ -13,7 +12,7 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'preservim/nerdtree'
 Plugin  'vim-airline/vim-airline'
 Plugin  'vim-airline/vim-airline-themes'
-Plugin 'majutsushi/tagbar'
+"Plugin 'majutsushi/tagbar'
 Plugin 'morhetz/gruvbox'
 Plugin 'neoclide/coc.nvim' ,{'branch': 'release'}
 Plugin 'ap/vim-css-color'
@@ -24,10 +23,14 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'tpope/vim-rails'
 Plugin 'SirVer/ultisnips'
+Plugin 'terryma/vim-multiple-cursors' 
+Plugin 'iamcco/markdown-preview.nvim'
 call vundle#end()
 filetype plugin indent on
 syntax on 
 source ~/.vim/coc_config
+let mapleader=" "
+nnoremap <SPACE> <nop>
 set guicursor=
 set background=dark
 set bs=2
@@ -55,8 +58,8 @@ let g:fzf_preview_window = ''
 set tags=tags;
 let g:airlineextensions#tabline#enabled = 1
 "nnoremap <C-n> <cmd>CHADopen<CR>
-nnoremap <C-n> <cmd>NERDTreeToggle<CR>
-nnoremap <C-\> :TagbarToggle<CR>
+"nnoremap <C-n> <cmd>NERDTreeToggle<CR>
+nnoremap <C-\> :BTags<CR>
 nnoremap <C-p> :Files<CR>
 nnoremap <C-t> :Tags<CR>
 set cmdheight=2
@@ -84,5 +87,6 @@ nnoremap <Tab> :bn<CR>
 nnoremap <S-Tab> :bp<CR>
 nnoremap <leader><Tab> :call coc#util#float_hide()<CR>
 set hidden
-nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> <leader>d <Plug>(coc-definition)
+nmap <leader>p <Plug>MarkdownPreviewToggle
 "autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
