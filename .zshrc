@@ -123,5 +123,6 @@ eval "$(rbenv init -)"
 export EDITOR="nvim"
 export LC_ALL="en_US.UTF-8"
 source "/home/jeremy/.vim/bundle/gruvbox/gruvbox_256palette.sh"
+eval "$(keychain --eval --quiet id_ed25519)" 
 eval "$(starship init zsh)"
 xset m 0 0
