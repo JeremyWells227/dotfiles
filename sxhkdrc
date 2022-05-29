@@ -9,8 +9,10 @@
 #
 
 # terminal emulator
+#super + Return
+#	st 
 super + Return
-	st 
+	kitty 
 
 # program launcher
 super + d
