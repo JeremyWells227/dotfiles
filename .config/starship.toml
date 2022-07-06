@@ -81,7 +81,7 @@ vicmd_symbol = "[V](#79740e)"
 
 [git_status]
 #format = '[$all_status$ahead_behind ](bg:#79740e)[ ](#79740e bg:#b57614)'
-format = '[$all_status$ahead_behind ](bg:#79740e)[ ](#79740e)'
+format = '[$all_status$ahead_behind ](fg:16 bg:#62D196)[ ](#62D196)'
 ahead = "${count}"
 diverged = "⇕${behind_count} ${ahead_count}"
 behind = "${count}"
@@ -102,9 +102,13 @@ symbol = " "
 symbol = " "
 
 [directory]
-read_only = " "
-style = "bold bg:#076678 fg:white"
-format = "[  $path ]($style)[$read_only]($read_only_style)[ ](fg:#076678 bg:#7b2b5e)"
+#style = "bold bg:#076678 fg:white"
+#read_only_style = "bold bg:#076678 fg:white"
+style = "bold bg:#63F2F1 fg:#3E3859"
+read_only_style = "bold bg:#63F2F1 fg:#3E3859"
+read_only = "  "
+#format = "[  $path ]($style)[$read_only]($read_only_style)[ ](fg:#076678 bg:#7b2b5e)"
+format = "[  $path ]($style)[$read_only]($read_only_style)[ ](fg:#63F2F1 bg:#A37ACC)"
 
 [docker_context]
 symbol = " "
@@ -117,8 +121,8 @@ symbol = " "
 
 [git_branch]
 symbol = " "
-style = "bold fg:16 bg:#7b2b5e"
-format = "[$symbol$branch ]($style)[ ](fg:#7b2b5e bg:#79740e)"
+style = "bold fg:16 bg:#A37ACC"
+format = "[$symbol$branch ]($style)[ ](fg:#A37ACC bg:#62D196)"
 
 [golang]
 symbol = " "
