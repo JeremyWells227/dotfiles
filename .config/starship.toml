@@ -61,7 +61,6 @@ $env_var\
 $crystal\
 $custom\
 $sudo\
-$cmd_duration\
 $jobs\
 $battery\
 $time\
@@ -70,6 +69,7 @@ $shell\
 $character"""
 
 
+# $cmd_duration
 # move the rest of the prompt to the right
 #right_format = """$all"""
 
@@ -104,11 +104,11 @@ symbol = " "
 [directory]
 #style = "bold bg:#076678 fg:white"
 #read_only_style = "bold bg:#076678 fg:white"
-style = "bold bg:#63F2F1 fg:#3E3859"
-read_only_style = "bold bg:#63F2F1 fg:#3E3859"
+style = "bold bg:#63f2f1 fg:#3E3859"
+read_only_style = "bold bg:#63f2f1 fg:#3E3859"
 read_only = "  "
 #format = "[  $path ]($style)[$read_only]($read_only_style)[ ](fg:#076678 bg:#7b2b5e)"
-format = "[  $path ]($style)[$read_only]($read_only_style)[ ](fg:#63F2F1 bg:#A37ACC)"
+format = "[  $path ]($style)[$read_only]($read_only_style)[ ](fg:#63f2f1 bg:#A37ACC)"
 
 [docker_context]
 symbol = " "
