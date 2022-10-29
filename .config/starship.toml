@@ -11,6 +11,7 @@ $kubernetes\
 $directory\
 $vcsh\
 $git_branch\
+${custom.no_git_branch}\
 $git_commit\
 $git_state\
 $git_metrics\
@@ -59,7 +60,6 @@ $openstack\
 $azure\
 $env_var\
 $crystal\
-$custom\
 $sudo\
 $jobs\
 $battery\
@@ -122,6 +122,11 @@ symbol = " "
 symbol = " "
 style = "bold fg:16 bg:#A37ACC"
 format = "[$symbol$branch ]($style)[ ](fg:#A37ACC bg:#62D196)"
+
+[custom.no_git_branch]
+style = "bold fg:#A37ACC bg:#62D196 "
+format = "[](fg:#A37ACC bg:#62D196)"
+when  = """ test ! -d .git """
 
 [golang]
 symbol = " "
