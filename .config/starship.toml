@@ -80,8 +80,8 @@ error_symbol = "[✗](#9d0006)"
 vicmd_symbol = "[V](#79740e)"
 
 [git_status]
-#format = '[$all_status$ahead_behind ](bg:#79740e)[ ](#79740e bg:#b57614)'
-format = '[$all_status$ahead_behind ](fg:16 bg:#62D196)[ ](#62D196)'
+#format = '[$all_status$ahead_behind ](bg:#79740e)[ ](#79740e bg:#b57614)'
+format = '[$all_status$ahead_behind ](fg:16 bg:#62D196)[ ](#62D196)'
 ahead = "${count}"
 diverged = "⇕${behind_count} ${ahead_count}"
 behind = "${count}"
@@ -93,11 +93,10 @@ staged = "${count} "
 [aws]
 symbol = "  "
 style = "bold bg:#b57614 fg:16"
-format = '[$symbol($profile )($region )(\[$duration\])]($style)[ ](fg:#b57614)'
+format = '[$symbol($profile )($region )(\[$duration\])]($style)[ ](fg:#b57614)'
 
 [conda]
 symbol = " "
-
 [dart]
 symbol = " "
 
@@ -107,8 +106,8 @@ symbol = " "
 style = "bold bg:#63f2f1 fg:#3E3859"
 read_only_style = "bold bg:#63f2f1 fg:#3E3859"
 read_only = "  "
-#format = "[  $path ]($style)[$read_only]($read_only_style)[ ](fg:#076678 bg:#7b2b5e)"
-format = "[  $path ]($style)[$read_only]($read_only_style)[ ](fg:#63f2f1 bg:#A37ACC)"
+#format = "[  $path ]($style)[$read_only]($read_only_style)[ ](fg:#076678 bg:#7b2b5e)"
+format = "[  $path ]($style)[$read_only]($read_only_style)[ ](fg:#63f2f1 bg:#A37ACC)"
 
 [docker_context]
 symbol = " "
@@ -122,7 +121,7 @@ symbol = " "
 [git_branch]
 symbol = " "
 style = "bold fg:16 bg:#A37ACC"
-format = "[$symbol$branch ]($style)[ ](fg:#A37ACC bg:#62D196)"
+format = "[$symbol$branch ]($style)[ ](fg:#A37ACC bg:#62D196)"
 
 [golang]
 symbol = " "
@@ -171,3 +170,6 @@ symbol = " "
 
 [swift]
 symbol = "ﯣ "
+
+[lua]
+symbol = "🌙 "
