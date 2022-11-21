@@ -11,11 +11,12 @@ $kubernetes\
 $directory\
 $vcsh\
 $git_branch\
-${custom.no_git_branch}\
+[ ](fg:#A37ACC bg:#62D196)\
 $git_commit\
 $git_state\
 $git_metrics\
 $git_status\
+[ ](#62D196)\
 $hg_branch\
 $docker_context\
 $package\
@@ -81,7 +82,7 @@ vicmd_symbol = "[V](#79740e)"
 
 [git_status]
 #format = '[$all_status$ahead_behind ](bg:#79740e)[ ](#79740e bg:#b57614)'
-format = '[$all_status$ahead_behind ](fg:16 bg:#62D196)[ ](#62D196)'
+format = '[$all_status$ahead_behind ](fg:16 bg:#62D196)'
 ahead = "${count}"
 diverged = "⇕${behind_count} ${ahead_count}"
 behind = "${count}"
@@ -121,12 +122,13 @@ symbol = " "
 [git_branch]
 symbol = " "
 style = "bold fg:16 bg:#A37ACC"
-format = "[$symbol$branch ]($style)[ ](fg:#A37ACC bg:#62D196)"
+format = "[$symbol$branch ]($style)"
 
 [custom.no_git_branch]
 style = "bold fg:#A37ACC bg:#62D196 "
 format = "[](fg:#A37ACC bg:#62D196)"
-when  = """ test ! -d .git """
+when  = """git status 2>&1 >/dev/null && false"""
+#when  = """test ! $(git rev-parse --is-inside-work-tree) -eq 'true' >/dev/null 2>&1  """
 
 [golang]
 symbol = " "
